@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/Writebtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Write card"
+        android:onClick="write"
+        app:layout_constraintBottom_toTopOf="@+id/Readbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Readbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Read card"
+        android:onClick="read"
+        app:layout_constraintBottom_toTopOf="@+id/Updatebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Writebtn" />
+
+    <Button
+        android:id="@+id/Updatebtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Update card"
+        app:layout_constraintBottom_toTopOf="@+id/Formatbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Readbtn" />
+
+    <Button
+        android:id="@+id/Formatbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Format card"
+        android:onClick="format"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
